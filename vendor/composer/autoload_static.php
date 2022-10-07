@@ -180,6 +180,7 @@ class ComposerStaticInit6a17e65a83b9dc9382413378d0f1fcb3
             'Acquia\\Blt\\Tests\\Robo\\' => 22,
             'Acquia\\Blt\\Tests\\' => 17,
             'Acquia\\Blt\\' => 11,
+            'Acquia\\BltDrupalVm\\' => 19,
         ),
     );
 
@@ -548,6 +549,10 @@ class ComposerStaticInit6a17e65a83b9dc9382413378d0f1fcb3
         'Acquia\\Blt\\' => 
         array (
             0 => __DIR__ . '/..' . '/acquia/blt/src',
+        ),
+        'Acquia\\BltDrupalVm\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/acquia/blt-drupal-vm/src',
         ),
     );
 

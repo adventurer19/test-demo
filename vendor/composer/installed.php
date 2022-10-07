@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'ca2c0e8fb05a039345ec77234baef1dbdacfda43',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -17,6 +17,17 @@
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../acquia/blt',
             'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'acquia/blt-drupal-vm' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'ca1d520ef48b7c55064f66e3b15ce87b9f99f523',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../acquia/blt-drupal-vm',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
             'dev_requirement' => false,
         ),
         'acquia/drupal-environment-detector' => array(
@@ -392,9 +403,9 @@
             ),
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'ca2c0e8fb05a039345ec77234baef1dbdacfda43',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -433,6 +444,15 @@
             'reference' => '196bacc76e7a72a63d0e1220926dbb190272db97',
             'type' => 'library',
             'install_path' => __DIR__ . '/../enlightn/security-checker',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'geerlingguy/drupal-vm' => array(
+            'pretty_version' => '6.0.4',
+            'version' => '6.0.4.0',
+            'reference' => '01545c37d96d4973b57ec6e842e54c40d0988207',
+            'type' => 'vm',
+            'install_path' => __DIR__ . '/../geerlingguy/drupal-vm',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -616,8 +636,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher-implementation' => array(

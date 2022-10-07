@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa8a4037cf490d5eb12f5f2b12d356d6",
+    "content-hash": "ad95e87c16f8e013e8cf87a90610acb7",
     "packages": [
         {
             "name": "acquia/blt",
@@ -104,6 +104,48 @@
                 "source": "https://github.com/acquia/blt/tree/12.8.4"
             },
             "time": "2022-08-24T15:37:38+00:00"
+        },
+        {
+            "name": "acquia/blt-drupal-vm",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/acquia/blt-vm.git",
+                "reference": "ca1d520ef48b7c55064f66e3b15ce87b9f99f523"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/acquia/blt-vm/zipball/ca1d520ef48b7c55064f66e3b15ce87b9f99f523",
+                "reference": "ca1d520ef48b7c55064f66e3b15ce87b9f99f523",
+                "shasum": ""
+            },
+            "require": {
+                "geerlingguy/drupal-vm": "~5.0 || ~6.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Acquia\\BltDrupalVm\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Acquia Engineering",
+                    "homepage": "https://www.acquia.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Drupal VM integration for Acquia BLT",
+            "support": {
+                "issues": "https://github.com/acquia/blt-vm/issues",
+                "source": "https://github.com/acquia/blt-vm/tree/master"
+            },
+            "time": "2021-09-13T14:24:40+00:00"
         },
         {
             "name": "acquia/drupal-environment-detector",
@@ -2132,6 +2174,60 @@
                 "source": "https://github.com/enlightn/security-checker/tree/v1.10.0"
             },
             "time": "2022-02-21T22:40:16+00:00"
+        },
+        {
+            "name": "geerlingguy/drupal-vm",
+            "version": "6.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/geerlingguy/drupal-vm.git",
+                "reference": "01545c37d96d4973b57ec6e842e54c40d0988207"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/geerlingguy/drupal-vm/zipball/01545c37d96d4973b57ec6e842e54c40d0988207",
+                "reference": "01545c37d96d4973b57ec6e842e54c40d0988207",
+                "shasum": ""
+            },
+            "type": "vm",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Geerling",
+                    "homepage": "https://www.jeffgeerling.com"
+                },
+                {
+                    "name": "Oskar Schöldström",
+                    "homepage": "http://oxy.fi"
+                }
+            ],
+            "description": "A VM for local Drupal development, built with Vagrant + Ansible",
+            "homepage": "https://www.drupalvm.com",
+            "keywords": [
+                "drupal",
+                "vagrant",
+                "virtual machine",
+                "vm"
+            ],
+            "support": {
+                "docs": "http://docs.drupalvm.com",
+                "issues": "https://github.com/geerlingguy/drupal-vm/issues",
+                "source": "https://github.com/geerlingguy/drupal-vm"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/geerlingguy",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/geerlingguy",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-05-28T20:26:07+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -6950,7 +7046,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "acquia/blt-drupal-vm": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

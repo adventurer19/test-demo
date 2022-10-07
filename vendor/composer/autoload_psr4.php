@@ -97,4 +97,5 @@ return array(
     'Acquia\\Blt\\Tests\\Robo\\' => array($vendorDir . '/acquia/blt/tests/phpunit/Robo'),
     'Acquia\\Blt\\Tests\\' => array($vendorDir . '/acquia/blt/tests/phpunit/src'),
     'Acquia\\Blt\\' => array($vendorDir . '/acquia/blt/src'),
+    'Acquia\\BltDrupalVm\\' => array($vendorDir . '/acquia/blt-drupal-vm/src'),
 );
